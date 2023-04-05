@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.snva.apisoap.service.UserServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.311 s <<< FAILURE! - in com.snva.apisoap.service.UserServiceImplTest
+addUser  Time elapsed: 0.301 s  <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.snva.apisoap.service.UserServiceImplTest.addUser(UserServiceImplTest.java:55)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+

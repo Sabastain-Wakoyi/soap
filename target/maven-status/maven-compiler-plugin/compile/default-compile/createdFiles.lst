@@ -8,6 +8,7 @@ com/snva/ex/soap/xml/user/package-info.class
 com/snva/ex/soap/xml/user/AddUserRequest.class
 com/snva/apisoap/model/User.class
 com/snva/apisoap/endpoints/UserEndpoint.class
+com/snva/apisoap/model/User$UserBuilder.class
 com/snva/ex/soap/xml/user/GetUserRequest.class
 com/snva/apisoap/repository/UserRepository.class
 com/snva/apisoap/config/Config.class
