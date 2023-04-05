@@ -1,0 +1,12 @@
+com/snva/ex/soap/xml/user/User.class
+com/snva/ex/soap/xml/user/GetUserResponse.class
+com/snva/apisoap/service/IUserService.class
+com/snva/apisoap/service/UserServiceImpl.class
+com/snva/apisoap/ApiSoapApplication.class
+com/snva/ex/soap/xml/user/ObjectFactory.class
+com/snva/ex/soap/xml/user/package-info.class
+com/snva/repository/UserRepository.class
+com/snva/apisoap/model/User.class
+com/snva/apisoap/endpoints/UserEndpoint.class
+com/snva/ex/soap/xml/user/GetUserRequest.class
+com/snva/apisoap/config/Config.class

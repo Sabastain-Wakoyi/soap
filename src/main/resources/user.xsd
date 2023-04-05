@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://snva.com/ex/soap/xml/user"
+           targetNamespace="http://snva.com/ex/soap/xml/user" elementFormDefault="qualified">
+
+    <xs:element name="getUserRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="userName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getUserResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="user" type="tns:user"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="user">
+        <xs:sequence>
+
+            <xs:element name="userName" type="xs:string"></xs:element>
+            <xs:element name="details" type="xs:string"></xs:element>
+            <xs:element name="user" type="xs:string"></xs:element>
+            <xs:element name="name" type="xs:string"></xs:element>
+            <xs:element name="dob" type="xs:string"></xs:element>
+            <xs:element name="contact" type="xs:string"></xs:element>
+            <xs:element name="email" type="xs:string"></xs:element>
+            <xs:element name="address" type="xs:string"></xs:element>
+            <xs:element name="course" type="xs:string"></xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
