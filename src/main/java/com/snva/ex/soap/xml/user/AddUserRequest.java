@@ -25,7 +25,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="user" type="{http://snva.com/ex/soap/xml/user}user"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "userName"
+    "user"
 })
-@XmlRootElement(name = "getUserRequest")
-public class GetUserRequest {
+@XmlRootElement(name = "addUserRequest")
+public class AddUserRequest {
 
     @XmlElement(required = true)
-    protected String userName;
+    protected User user;
 
     /**
-     * Gets the value of the userName property.
+     * Gets the value of the user property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link User }
      *     
      */
-    public String getUserName() {
-        return userName;
+    public User getUser() {
+        return user;
     }
 
     /**
-     * Sets the value of the userName property.
+     * Sets the value of the user property.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link User }
      *     
      */
-    public void setUserName(String value) {
-        this.userName = value;
+    public void setUser(User value) {
+        this.user = value;
     }
 
 }

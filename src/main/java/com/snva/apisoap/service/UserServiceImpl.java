@@ -1,7 +1,7 @@
 package com.snva.apisoap.service;
 
 import com.snva.apisoap.model.User;
-import com.snva.repository.UserRepository;
+import com.snva.apisoap.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,24 +11,26 @@ import java.util.List;
 @Transactional
 public class UserServiceImpl implements IUserService {
 
+
+
     @Autowired
    private UserRepository userRepository;
 
-   // public UserServiceImpl(UserRepository userRepository) {
-     //   this.userRepository = userRepository;
-   // }
+
     @Override
-    public User getUserByEmail(String email){
+    public User getUserByName(String name){
 
-return null;
-
-        //return userRepository.findByEmail(email);
+        return userRepository.findUserByName(name);
     }
 
     @Override
    public List<User> getAllUsers(){
-//return  null;
         return userRepository.findAll();
    }
+
+    @Override
+    public User addUser(User user) {
+        return userRepository.save(user);
+    }
 
 }

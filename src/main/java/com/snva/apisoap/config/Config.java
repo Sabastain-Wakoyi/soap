@@ -21,7 +21,7 @@ import org.springframework.xml.xsd.XsdSchema;
 public class Config extends WsConfigurerAdapter {
 
     @Bean
-    public ServletRegistrationBean<MessageDispatcherServlet>  getmessageDispatcher(ApplicationContext appCtx) {
+    public ServletRegistrationBean<MessageDispatcherServlet>  getMessageDispatcher(ApplicationContext appCtx) {
         MessageDispatcherServlet srvlt = new MessageDispatcherServlet();
         srvlt.setTransformSchemaLocations(true);
         srvlt.setApplicationContext(appCtx);

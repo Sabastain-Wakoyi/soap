@@ -4,6 +4,8 @@ import java.util.*;
 import com.snva.apisoap.model.User;
 
 public interface IUserService {
-    User getUserByEmail(String email);
+    User getUserByName(String name);
     List<User> getAllUsers();
+
+    User addUser(User user);
 }
